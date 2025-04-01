@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+
+  <body class="bg-page">
+    <nav class="navbar navbar-expand shadow-lg py-4">
+      <div class="container mx-auto">
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto font-inter font-md gap-5"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Button to Open the Modal -->
+
+    <!-- Sign In Modal -->
+    <div
+      class="modal fade"
+      id="signinModal"
+      tabindex="-1"
+      aria-labelledby="signinModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content d-flex justify-content-center align-items-center"
+        >
+          <div class="modal-body rounded-4 bg-white font-inter signin-content">
+            <div class="py-3 position-relative">
+              <div class="section-w2 mx-auto">
+                <div class="">
+                  <div class="d-flex justify-content-between">
+                    <img
+                      src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C_2.png"
+                      alt=""
+                      class="img-fluid w-50 signup-logo"
+                    />
+                    <div>
+                      <img
+                        src="/assests/Subtract.png"
+                        class="img-fluid mt-3 me-2 position-absolute right-0 cursor-pointer"
+                        alt=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-2 my-md-5">
+                    <h1 class="font-xxl fw-bold font-raleway">Sign In</h1>
+                    <p class="font-xs font-inter text-blue">
+                      Nice to see you again!
+                    </p>
+                  </div>
+                  <div class="form mx-auto text-center">
+                    <form class="">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          name=""
+                          id=""
+                          placeholder="Email"
+                          class="w-100 py-2 mb-3"
+                        />
+                      </div>
+
+                      <div class="form-group position-relative">
+                        <input
+                          type="password"
+                          name=""
+                          id=""
+                          placeholder="Password"
+                          class="w-100 py-2 mb-4"
+                        />
+                        <span
+                          ><img
+                            class="position-absolute eye"
+                            src="/assests/Group 1000002935.png"
+                            alt=""
+                        /></span>
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center justify-content-between py-4"
+                      >
+                        <div class="d-flex">
+                          <input type="checkbox" name="" id="" />
+                          <p
+                            class="mb-0 ms-3 font-inter fw-medium text-blue-50"
+                          >
+                            Remember Me
+                          </p>
+                        </div>
+                        <p class="text-blue fw-medium font-inter mb-0 ms-3">
+                          Forget Password
+                        </p>
+                      </div>
+                      <div class="mb-4">
+                        <a
+                          href=""
+                          class="btn bg-main-blue w-100 py-2 rounded-pill fw-bold text-white my-2 my-md-4"
+                          >Sign In</a
+                        >
+                        <p class="font-inter">
+                          Don’t have an account?
+                          <a
+                            href=""
+                            class="text-blue text-decoration-none fw-semibold"
+                            >Create Account</a
+                          >
+                        </p>
+                      </div>
+
+                      <div>
+                        <div class="w-100 hr"></div>
+                        <div class="or mx-auto fw-medium font-inter">Or</div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between pb-md-3 signin"
+                      >
+                        <div class="py-4 mx-auto">
+                          <a href="">
+                            <img
+                              src="/assests/Google logo.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                            <span class="text-blue ms-1 font-inter"
+                              >Continue with
+                              <span class="fw-semibold">Google</span></span
+                            >
+                          </a>
+                        </div>
+                        <div class="py-4 mx-auto signin">
+                          <a href="">
+                            <img
+                              class="img-fluid"
+                              src="/assests/Facebook_f_logo_(2021) 1.png"
+                              alt=""
+                            />
+                            <span class="text-blue ms-1 font-inter"
+                              >Continue with
+                              <span class="fw-semibold">Facebook</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign UP Modal -->
+
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content d-flex justify-content-center align-items-center"
+        >
+          <div class="modal-body bg-white rounded-4 signin-content">
+            <div class="py-3 position-relative">
+              <div class="section-w2 mx-auto px-2">
+                <div class="">
+                  <div class="d-flex justify-content-between">
+                    <img
+                      src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C_2.png"
+                      alt=""
+                      class="img-fluid w-50 signup-logo"
+                    />
+                    <div>
+                      <img
+                        src="/assests/Subtract.png"
+                        class="img-fluid mt-3 me-2 position-absolute right-0 cursor-pointer"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <h1 class="font-xxl fw-bold font-raleway">Sign Up</h1>
+                  <p class="font-xs font-inter text-blue">
+                    Join us and start something great!
+                  </p>
+
+                  <div class="">
+                    <div
+                      class="rounded-pill border border-1 d-flex mx-auto p-1"
+                      style="width: max-content"
+                    >
+                      <a
+                        href=""
+                        class="btn px-4 py-2 text-blue rounded-pill fw-semibold"
+                        >Creator</a
+                      >
+                      <a
+                        href=""
+                        class="btn px-4 py-2 text-white bg-main-blue rounded-pill fw-semibold"
+                        >Viewer</a
+                      >
+                    </div>
+                    <p
+                      class="text-center font-xs text-blue font-inter py-3 mb-0"
+                    >
+                      Select Account Type
+                    </p>
+                  </div>
+
+                  <div class="form mx-auto text-center">
+                    <form class="">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Full Name"
+                          class="w-100 py-2 mb-4"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          name=""
+                          id=""
+                          placeholder="Email"
+                          class="w-100 py-2 mb-4"
+                        />
+                      </div>
+
+                      <div class="form-group position-relative">
+                        <input
+                          type="password"
+                          name=""
+                          id=""
+                          placeholder="Password"
+                          class="w-100 py-2 mb-3"
+                        />
+                        <span
+                          ><img
+                            class="position-absolute eye"
+                            src="/assests/Group 27205.png"
+                            alt=""
+                        /></span>
+                      </div>
+
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" name="" id="" />
+                        <p class="mb-0 ms-3 font-inter font-14">
+                          I agree to all the
+                          <span class="text-blue fw-semibold">Terms</span> and
+                          <span class="fw-semibold text-blue">
+                            Privacy Policies.</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mb-4">
+                        <a
+                          href=""
+                          class="btn bg-main-blue w-100 py-2 rounded-pill fw-bold text-white my-4"
+                          >Create Account</a
+                        >
+                        <p class="font-inter">
+                          Already have an account?
+                          <a
+                            href=""
+                            class="text-blue text-decoration-none fw-semibold"
+                            >Sign In</a
+                          >
+                        </p>
+                      </div>
+
+                      <div>
+                        <div class="w-100 hr"></div>
+                        <div class="or mx-auto fw-medium font-inter">Or</div>
+                      </div>
+
+                      <div class="d-flex justify-content-between signin">
+                        <div class="py-4 mx-auto">
+                          <a href="">
+                            <img
+                              src="/assests/Google logo.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                            <span class="text-blue ms-1 font-inter"
+                              >Continue with
+                              <span class="fw-semibold">Google</span></span
+                            >
+                          </a>
+                        </div>
+                        <div class="py-4 mx-auto signin">
+                          <a href="">
+                            <img
+                              class="img-fluid"
+                              src="/assests/Facebook_f_logo_(2021) 1.png"
+                              alt=""
+                            />
+                            <span class="text-blue ms-1 font-inter"
+                              >Continue with
+                              <span class="fw-semibold">Facebook</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end signupmodel -->
+
+    <div class="container-fluid bg-header pt-4 pb-5">
+      <div class="container mx-auto">
+        <div class="d-flex flex-column">
+          <img
+            class="img-fluid mx-auto"
+            src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C_2.png"
+            alt=""
+          />
+          <h1 class="text-blue fw-bold font-inter text-center">
+            Exclusive Content From Top Creat<span
+              ><img src="/assests/Vector (11).png" alt="" /></span
+            >rs
+          </h1>
+        </div>
+
+        <div class="main-btn d-flex justify-content-center gap-4 my-5">
+          <a
+            class="btn bg-main-blue text-white rounded-pill px-4 py-2"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+            href=""
+            >Create Account</a
+          >
+          <a
+            class="btn rounded-pill px-5 py-2"
+            data-bs-toggle="modal"
+            data-bs-target="#signinModal"
+            href=""
+            >Login</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section-w mx-lg-auto position-relative shadow-sm exclusivecontent-wrapper"
+    >
+      <div
+        class="exclusivecontent mx-2 d-flex justify-content-center align-items-center px-lg-4 py-lg-4 border rounded-pill position-absolute top1 bg-white font-raleway text-blue"
+      >
+        <div class="font-xl fw-bold px-4 ms-500">Exclusive Content</div>
+        <div class="font-lg fw-bold px-4 border-1 border-start border-end">
+          Fitness 🏋️‍♂️
+          <span class="font-xs d-block text-center">Workouts & Health</span>
+        </div>
+        <div class="font-lg fw-bold px-4 border-1 border-end">
+          Gaming 🎮
+          <span class="font-xs d-block text-center">Live Streams & Tips</span>
+        </div>
+        <div class="font-lg fw-bold px-4 border-1 border-end">
+          Photography 📷
+          <span class="font-xs d-block text-center">Editing & Shoots</span>
+        </div>
+        <div class="font-lg fw-bold px-4">
+          Sports ⚽ <span class="font-xs d-block text-center">Training</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Creators Section -->
+    <!-- <div class="top-creators">
+      <div class="section-w mx-auto">
+        <div
+          class="creators-container my-5 py-6 d-flex align-items-center container"
+        >
+
+          <div
+            class="circle position-relative ms-3"
+            onclick="topCreatorsSwiper.slidePrev()"
+          >
+            <img
+              class="position-absolute center-div ms-auto"
+              src="/assests/Frame.png"
+              alt="Previous"
+            />
+          </div>
+
+          <div class="mx-auto text-center font-inter text-width">
+            <h1 class="font-xxl fw-bold font-raleway text-blue">
+              Top Creators
+            </h1>
+            <p class="text-base text-blue font-variation">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <a
+              class="btn bg-main-blue text-white rounded-pill px-4 py-2"
+              href="#"
+              >Explore More</a
+            >
+          </div>
+
+
+          <div
+            class="circle position-relative me-3"
+            onclick="topCreatorsSwiper.slideNext()"
+          >
+            <img
+              class="position-absolute center-div ms-auto"
+              src="/assests/Vector.png"
+              alt="Next"
+            />
+          </div>
+        </div>
+
+
+      </div>
+    </div> -->
+
+    <!-- trending -->
+
+    <!-- Work -->
+
+    <div class="work">
+      <div class="creator my-5 d-flex align-items-center container">
+        <div class="mx-auto text-center font-inter">
+          <h1 class="font-xxl fw-bold font-raleway">How It Works</h1>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <br />
+            eiusmod tempor incididunt
+          </p>
+        </div>
+      </div>
+
+      <div class="mx-auto section-w1">
+        <div
+          class="d-flex justify-content-between align-items-center text-center"
+        >
+          <div class="d-flex flex-column w-25 align-items-center">
+            <div class="flex">
+              <img src="/assests/Group.png" alt="" class="img-fluid mx-auto" />
+            </div>
+            <p class="my-3">Create Your Account</p>
+          </div>
+          <div>
+            <img src="/assests/Group (3).png" alt="" class="img-fluid mb-5" />
+          </div>
+
+          <div class="d-flex flex-column w-25 align-items-center">
+            <div class="flex">
+              <img
+                src="/assests/Group (1).png"
+                alt=""
+                class="img-fluid mx-auto"
+              />
+            </div>
+            <p class="my-3">Start creating content and building a fan base</p>
+          </div>
+
+          <div>
+            <img src="/assests/Group (3).png" alt="" class="img-fluid mb-5" />
+          </div>
+
+          <div class="d-flex flex-column w-25 align-items-center">
+            <div class="flex">
+              <img
+                src="/assests/Group (2).png"
+                alt=""
+                class="img-fluid mx-auto"
+              />
+            </div>
+            <p class="my-3">Get paid & keep 100% of your earnings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="py-6">
+      <div class="container-fluid bg-main-blue1 my-5">
+        <div class="section-w mx-auto">
+          <div class="row d-flex flex-wrap align-items-center text-white">
+            <div class="col-lg-8 py-5 text-center text-lg-start featured">
+              <h1 class="font-xxl font-raleway fw-bold my-3">
+                Featured Creator of this Week!
+              </h1>
+              <p class="font-md1 font-inter text-white-50">
+                Meet our standout creator each week, we spotlight a talented
+                creator who excels in storytelling, captivates audiences, and
+                delivers outstanding results for brands.
+              </p>
+              <a
+                href=""
+                class="btn bg-white rounded-pill px-5 fw-bold text-blue font-md mt-3 mb-4"
+              >
+                Become a Creator
+              </a>
+            </div>
+
+            <div class="col-lg-4 position-relative">
+              <div class="bg-blur3 position-absolute"></div>
+              <div class="bg-blur4 position-absolute"></div>
+              <div class="position-relative text-center">
+                <img
+                  src="/assests/Group 1.png"
+                  class="img-fluid position-absolute featured-img d-none d-lg-flex"
+                  alt=""
+                />
+                <img
+                  src="/assests/Group 1.png"
+                  class="img-fluid d-lg-none"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Accordion  -->
+
+    <div class="section-w mx-auto">
+      <div class="mx-auto text-center font-inter">
+        <h1 class="font-xxl fw-bold font-raleway text-blue">
+          Frequently Asked Question
+        </h1>
+        <p class="font-base">
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </p>
+      </div>
+
+      <!-- accordion -->
+      <div class="accordion accordion-flush my-5" id="accordionFlushExample">
+        <div class="accordion-item p-3 rounded-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fw-bold text-blue font-inter"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              What is VIPeek?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              ViPeek is a platform that helps businesses connect with creators
+              to promote their brands through engaging video content.
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="accordion-item p-3 rounded-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fw-bold text-blue font-inter"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              How does VIPeek work?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              ViPeek is a platform that helps businesses connect with creators
+              to promote their brands through engaging video content.
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="accordion-item p-3 rounded-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fw-bold text-blue font-inter"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Who can use VIPeek?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              ViPeek is a platform that helps businesses connect with creators
+              to promote their brands through engaging video content.
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="accordion-item p-3 rounded-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fw-bold text-blue font-inter"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Is there a cost to join VIPeek?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              ViPeek is a platform that helps businesses connect with creators
+              to promote their brands through engaging video content.
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="accordion-item p-3 rounded-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed fw-bold text-blue font-inter"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              How do creators get paid?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              ViPeek is a platform that helps businesses connect with creators
+              to promote their brands through engaging video content.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <footer class="mt-6 mb-5">
+      <div class="section-w mx-auto">
+        <div
+          class="row footer-wrapper d-flex justify-content-around position-relative mx-3"
+        >
+          <div class="col-md-3 col-4">
+            <div class="">
+              <div class="footer-logo">
+                <img
+                  src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C_2.png"
+                  alt=""
+                  style="max-width: 350px"
+                />
+              </div>
+              <p class="" style="max-width: 200px">
+                Wits seamlessly connects your members with the community,
+                resources.
+              </p>
+
+              <div class="socialIcon d-flex justify-content-start gap-3">
+                <img src="/assests/facebook.png" alt="" class="img-fluid" />
+                <img src="/assests/twitter.png" alt="" class="img-fluid" />
+                <img src="/assests/instagram.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-links col-4 col-md-2">
+            <h1 class="">Platform</h1>
+            <ul>
+              <li><a href="">How it Works</a></li>
+              <li><a href="">Checkout</a></li>
+              <li><a href="">Fraud</a></li>
+              <li><a href="">Protection</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links col-md-2 col-4">
+            <h1 class="">Learn</h1>
+            <ul>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">ThinkShop</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links col-md-2 col-4">
+            <h1 class="">About</h1>
+            <ul>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">News & Press</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="d-flex justify-content-start flex-column align-items-start footer-contact col-md-2 col-4 pe-0"
+          >
+            <h1 class="">Contact Us</h1>
+
+            <a
+              href=""
+              class="btn bg-main-blue px-4 py-2 font-xs rounded-pill text-white my-3"
+              >Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid bg-main-blue text-white py-3 text-center">
+      <p class="m-0 font-rubik">© Copyright V.I.Peek. All right reserved</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+// Top Creators Navigation
+document.querySelector(".top-creators .swiper-button-next").addEventListener("click", function () {
+  topCreatorsSwiper.slideNext();
+});
+
+document.querySelector(".top-creators .swiper-button-prev").addEventListener("click", function () {
+  topCreatorsSwiper.slidePrev();
+});
+
+// Trending Navigation
+document.querySelector(".trending .swiper-button-next").addEventListener("click", function () {
+  trendingSwiper.slideNext();
+});
+
+document.querySelector(".trending .swiper-button-prev").addEventListener("click", function () {
+  trendingSwiper.slidePrev();
+});
+
+
