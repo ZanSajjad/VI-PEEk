@@ -282,17 +282,19 @@
                       <div class="form-group position-relative">
                         <input
                           type="password"
-                          name=""
-                          id=""
+                          id="passwordInput"
                           placeholder="Password"
                           class="w-100 py-2 mb-3"
                         />
-                        <span
-                          ><img
-                            class="position-absolute eye"
+                        <span>
+                          <img
+                            id="togglePassword"
+                            class="position-absolute eye cursor-pointer"
                             src="/assests/Group 27205.png"
-                            alt=""
-                        /></span>
+                            alt="Show Password"
+                         
+                          />
+                        </span>
                       </div>
 
                       <div class="d-flex align-items-center">
@@ -580,7 +582,7 @@
 
     <!--Accordion  -->
 
-    <div class="section-w mx-auto">
+    <div class="section-w mx-auto homepage-accordion">
       <div class="mx-auto text-center font-inter">
         <h1 class="font-xxl fw-bold font-raleway text-blue">
           Frequently Asked Question
@@ -726,9 +728,9 @@
     <footer class="mt-6 mb-5">
       <div class="section-w mx-auto">
         <div
-          class="row footer-wrapper d-flex justify-content-around position-relative mx-3"
+          class="row d-none footer-wrapper d-sm-flex justify-content-around position-relative mx-3 "
         >
-          <div class="col-md-3 col-4">
+          <div class="col-md-3 col-sm-12 mb-4">
             <div class="">
               <div class="footer-logo">
                 <img
@@ -737,19 +739,19 @@
                   style="max-width: 350px"
                 />
               </div>
-              <p class="" style="max-width: 200px">
+              <p class="font-base" style="max-width: 200px">
                 Wits seamlessly connects your members with the community,
                 resources.
               </p>
 
-              <div class="socialIcon d-flex justify-content-start gap-3">
+              <div class="socialIcon d-flex justify-content-start gap-3 ">
                 <img src="/assests/facebook.png" alt="" class="img-fluid" />
                 <img src="/assests/twitter.png" alt="" class="img-fluid" />
                 <img src="/assests/instagram.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
-          <div class="footer-links col-4 col-md-2">
+          <div class="footer-links col-sm-3 col-md-2 ">
             <h1 class="">Platform</h1>
             <ul>
               <li><a href="">How it Works</a></li>
@@ -759,7 +761,7 @@
             </ul>
           </div>
 
-          <div class="footer-links col-md-2 col-4">
+          <div class="footer-links col-md-2 col-sm-3">
             <h1 class="">Learn</h1>
             <ul>
               <li><a href="">Resources</a></li>
@@ -769,7 +771,7 @@
             </ul>
           </div>
 
-          <div class="footer-links col-md-2 col-4">
+          <div class="footer-links col-md-2 col-sm-3">
             <h1 class="">About</h1>
             <ul>
               <li><a href="">Careers</a></li>
@@ -781,17 +783,84 @@
           </div>
 
           <div
-            class="d-flex justify-content-start flex-column align-items-start footer-contact col-md-2 col-4 pe-0"
+            class="d-flex justify-content-start flex-column align-items-start footer-contact col-md-2 col-sm-3 pe-0"
           >
             <h1 class="">Contact Us</h1>
 
             <a
               href=""
-              class="btn bg-main-blue px-4 py-2 font-xs rounded-pill text-white my-3"
+              class="btn bg-main-blue px-3 px-lg-4 py-2 font-xs rounded-pill text-white my-3"
               >Get in touch
             </a>
           </div>
         </div>
+        <div
+        class="row footer-wrapper  d-flex d-sm-none justify-content-around position-relative mx-3 "
+      >
+        <div class="col-12 mb-4">
+          <div class="">
+            <div class="footer-logo">
+              <img
+                src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C_2.png"
+                alt=""
+                style="max-width: 350px"
+              />
+            </div>
+            <p class="font-base" style="max-width: 200px">
+              Wits seamlessly connects your members with the community,
+              resources.
+            </p>
+
+            <div class="socialIcon d-flex justify-content-start gap-3 ">
+              <img src="/assests/facebook.png" alt="" class="img-fluid" />
+              <img src="/assests/twitter.png" alt="" class="img-fluid" />
+              <img src="/assests/instagram.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-links col-6 ">
+          <h1 class="">Platform</h1>
+          <ul>
+            <li><a href="">How it Works</a></li>
+            <li><a href="">Checkout</a></li>
+            <li><a href="">Fraud</a></li>
+            <li><a href="">Protection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links col-6">
+          <h1 class="">Learn</h1>
+          <ul>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">ThinkShop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links col-md-2 col-6">
+          <h1 class="">About</h1>
+          <ul>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Partners</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">News & Press</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="d-flex justify-content-start flex-column align-items-start footer-contact col-md-2 col-6 pe-0"
+        >
+          <h1 class="">Contact Us</h1>
+
+          <a
+            href=""
+            class="btn bg-main-blue px-3 px-lg-4 py-2 font-xs rounded-pill text-white my-3"
+            >Get in touch
+          </a>
+        </div>
+      </div>
       </div>
     </footer>
     <div class="container-fluid bg-main-blue text-white py-3 text-center">

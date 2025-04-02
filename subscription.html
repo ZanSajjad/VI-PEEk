@@ -16,79 +16,122 @@
   <body class="bg-light-gray">
     <nav class="navbar navbar-expand bg-white main-nav">
       <div
-        class="container-fluid d-flex d-flex justify-content-between w-100 mx-xxl-5 main-nav"
+        class="container-fluid d-flex justify-content-between w-100 mx-xxl-5"
       >
         <div class="d-flex flex-column align-items-center">
           <img
             src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C 2.png"
             alt=""
           />
-          <p class="text-blue font-inter fw-bold brand-text m-0">
+          <p
+            class="text-blue font-inter fw-bold brand-text m-0 d-none d-lg-block"
+          >
             Exclusive Content From Top Creat
             <span><img src="/assests/Vector (11).png" alt="" /></span>rs
           </p>
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul
-            class="navbar-nav d-flex align-items-center gap-lg-5 me-auto mb-2 mb-lg-0 ps-5"
-          >
-            <li class="nav-item">
-              <div class="search-bar position-relative">
-                <input
-                  type="search"
-                  class="py-2 rounded-pill px-3"
-                  placeholder="Search"
-                />
-                <span
-                  ><img src="/assests/images.png" class="searchIcon" alt=""
-                /></span>
-              </div>
-            </li>
-            <li class="nav-item mx-lg-3 navlink1">
-              <a href="/feed.html"><img src="/assests/Vector (26).png" alt="" /></a>
-            </li>
-            <li class="nav-item mx-lg-3">
-              <a href="/subscription.html"><img src="/assests/Layer 15 (2).png" alt="" /></a>
-            </li>
-          </ul>
 
-          <div class="d-flex justify-content-between align-items-center">
-            <img
-              src="/assests/Icon Img Menu (1).png"
-              class="img-fluid"
-              alt=""
-            />
-            <img
-              src="/assests/Icon Img Menu.png"
-              class="img-fluid mx-3"
-              alt=""
-            />
-            <div class="d-flex align-items-center">
-              <img src="/assests/Avatar.png" class="userIcon mx-3" alt="" />
-              <p class="d-flex flex-column font-inter fw-bold font-14">
-                Ashir Name <span class="font-xss fw-normal">@username</span>
-              </p>
+        <ul
+          class="navbar-nav d-flex align-items-center gap-lg-5 me-auto mb-2 mb-lg-0 ps-5"
+        >
+          <li class="nav-item">
+            <div class="search-bar position-relative">
+              <input
+                type="search"
+                class="py-2 rounded-pill px-3"
+                placeholder="Search"
+              />
+              <span
+                ><img src="/assests/images.png" class="searchIcon" alt=""
+              /></span>
+            </div>
+          </li>
+          <li class="nav-item mx-lg-3 navlink1">
+            <a href="/feed.html"
+              ><img src="/assests/Vector (3).svg" alt=""
+            /></a>
+          </li>
+          <li class="nav-item mx-lg-3">
+            <a href="/subscription.html"
+              ><img src="/assests/Layer 15 (1).svg" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <div class="position-relative">
+            <a href="">
+              <img src="/assests/fi-sr-bell.svg" class="img-fluid" alt=""
+            /> <span
+            class="bg-main-blue text-white px-2 font-14 fw-semibold rounded-3 position-absolute nav-notification"
+            >
+           2</span >
+          </a>
+           
+          </div>
+          <div class="position-relative">
+            <a href="">
               <img
-                src="/assests/Icon (1).png"
-                class="img-fluid my-2 mx-2"
+                src="/assests/fi-sr-envelope (1).svg"
+                class="img-fluid mx-3"
                 alt=""
               />
-            </div>
+              <span
+              class="bg-main-blue text-white px-2 font-14 fw-semibold rounded-3 position-absolute msg-notification"
+              >2</span>
+            </a>
+            
+          </div>
+          <div
+            class="d-flex align-items-center profile position-relative cursor-pointer"
+            id="profileToggle"
+          >
+            <img src="/assests/Avatar.png" class="userIcon mx-3" alt="" />
+            <p
+              class="d-flex flex-column font-inter fw-bold font-14 d-none d-lg-flex"
+            >
+              Ashir Name <span class="font-xss fw-normal">@username</span>
+            </p>
+            <img
+              src="/assests/Icon (1).png"
+              class="img-fluid my-2 mx-2"
+              alt=""
+            />
+          </div>
+
+          <div class="menu" id="dropdownMenu">
+            <ul>
+              <li>
+                <a href="profile.html"
+                  ><img src="/assests/Icon.svg" alt="" />&nbsp;Profile</a
+                >
+              </li>
+              <li>
+                <a href="messages.html"
+                  ><img
+                    src="/assests/fi-sr-envelope.svg"
+                    alt=""
+                  />&nbsp;Messages</a
+                >
+              </li>
+              <li>
+                <a href="support.html"
+                  ><img
+                    src="/assests/Group 1000002901.svg"
+                    alt=""
+                  />&nbsp;Help</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/assests/Group.svg" alt="" />&nbsp;Sign Out</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
+
     <nav class="navbar navbar-expand bg-white responsive-nav">
       <div class="container-fluid w-100">
         <div class="d-flex justify-content-between w-100">
@@ -97,67 +140,94 @@
               src="/assests/38770BF6-9C5E-4BF8-854D-470DB7F1E33C 2.png"
               alt=""
             />
-            <p class="text-blue font-inter fw-bold brand-text m-0 d-none">
-              Exclusive Content From Top Creat
-              <span><img src="/assests/Vector (11).png" alt="" /></span>rs
-            </p>
           </div>
-
           <div
             class="collapse navbar-collapse d-flex justify-content-end"
             id="navbarSupportedContent"
           >
             <ul
-              class="navbar-nav d-none d-sm-flex justify-content-center align-items-center gap-5 mx-auto mb-2 mb-lg-0"
+              class="navbar-nav d-none d-md-flex justify-content-center align-items-center gap-5 mx-auto mb-2 mb-lg-0"
             >
               <li class="nav-item navlink1">
-                <a href="feed.html"><img src="/assests/Vector (26).png" alt="" /></a>
+                <a href="feed.html"
+                  ><img src="/assests/Vector (3).svg" alt=""
+                /></a>
               </li>
               <li class="nav-item mx-lg-3">
-                <a href="subscription.html"><img src="/assests/Layer 15 (2).png" alt="" /></a>
+                <a href="subscription.html"
+                  ><img src="/assests/Layer 15 (1).svg" alt=""
+                /></a>
               </li>
             </ul>
 
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-none d-md-flex">
-                <img
-                  src="/assests/Icon Img Menu (1).png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <img
-                  src="/assests/Icon Img Menu.png"
-                  class="img-fluid mx-3"
-                  alt=""
-                />
-              </div>
-              <div class="d-flex align-items-center nav-icon1">
-                <img src="/assests/Avatar.png" class="userIcon mx-3" alt="" />
-                <p
-                  class="d-flex flex-column font-inter fw-bold font-14 nav-icon-p username-nav"
-                >
-                  Ashir Name <span class="font-xss fw-normal">@username</span>
-                </p>
-                <img
-                  src="/assests/Icon (1).png"
-                  class="img-fluid my-2 mx-2"
-                  alt=""
-                />
-              </div>
+            <div
+              class="d-flex align-items-center cursor-pointer profile"
+              id="profileToggle2"
+            >
+              <img src="/assests/Avatar.png" class="userIcon mx-sm-3" alt="" />
+              <p
+                class="d-flex flex-column font-inter fw-bold font-14 d-none d-md-flex username-nav"
+              >
+                Ashir Name <span class="font-xss fw-normal">@username</span>
+              </p>
+              <img
+                src="/assests/Icon (1).png"
+                class="img-fluid my-2 mx-2"
+                alt=""
+              />
+            </div>
+
+            <div class="menu" id="dropdownMenu2">
+              <ul>
+                <li>
+                  <a href="profile.html"
+                    ><img src="/assests/Icon.svg" alt="" />&nbsp;Profile</a
+                  >
+                </li>
+                <li>
+                  <a href="messages.html"
+                    ><img
+                      src="/assests/fi-sr-envelope.svg"
+                      alt=""
+                    />&nbsp;Messages</a
+                  >
+                </li>
+                <li>
+                  <a href="support.html"
+                    ><img
+                      src="/assests/Group 1000002901.svg"
+                      alt=""
+                    />&nbsp;Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assests/Group.svg" alt="" />&nbsp;Sign Out</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-
     <main>
       <div class="container-fluid px-0">
-        <div class="feed-wrapper d-flex justify-content-between">
-          <!-- sidebar -->
+        <div class="d-flex justify-content-between mx-2">
           <div class="sidebar-icon py-2">
             <img src="/assests/list.svg" class="sidebar-icon-width" alt="" />
           </div>
+          <div class="chat-side-icon py-2" id="chatIcon">
+            <img
+              src="/assests/chat-dots.svg"
+              class="sidebar-icon-width"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="feed-wrapper d-flex justify-content-between">
+          <!-- sidebar -->
           <div class="sidebar px-4" id="sideBox">
             <div
               class="sidebar-close-icon d-flex ms-auto w-100"
@@ -168,15 +238,15 @@
             <ul>
               <li>
                 <a href="feed.html"
-                  ><img src="/assests/Vector (8).png" alt="" /><span
-                    class="sidebar-text "
+                  ><img src="/assests/Vector (1).svg" alt="" /><span
+                    class="sidebar-text"
                     >Home</span
                   ></a
                 >
               </li>
               <li>
                 <a href="profile.html"
-                  ><img src="/assests/Icon.png" alt="" /><span
+                  ><img src="/assests/Icon (5).svg" alt="" /><span
                     class="sidebar-text"
                     >Profile</span
                   ></a
@@ -184,7 +254,7 @@
               </li>
               <li>
                 <a href="subscriptionmanagement.html"
-                  ><img src="/assests/Subtract (1).png" alt="" /><span
+                  ><img src="/assests/Subtract.svg" alt="" /><span
                     class="sidebar-text"
                     >Subscription Management</span
                   ></a
@@ -192,15 +262,20 @@
               </li>
               <li>
                 <a href="wallet.html"
-                  ><img src="/assests/Vector (9).png" alt="" /><span
+                  ><img src="/assests/empty-wallet.svg" alt="" /><span
                     class="sidebar-text"
                     >Wallet & Payments</span
                   ></a
                 >
               </li>
-              <li>
-                <a href="messages.html"
-                  ><img src="/assests/Group 1000002902.png" alt="" /><span
+              <li class="position-relative">
+                <a href="messages.html">
+                  <span
+                    class="text-white  rounded-2 position-absolute side-notification"
+                  >
+                    2</span
+                  >
+                  <img src="/assests/fi-sr-envelope.svg" alt="" /><span
                     class="sidebar-text"
                     >Messages</span
                   ></a
@@ -208,7 +283,7 @@
               </li>
               <li>
                 <a href="purchaseHistory.html"
-                  ><img src="/assests/Group 1000002900.png" alt="" /><span
+                  ><img src="/assests/Group 1000002900.svg" alt="" /><span
                     class="sidebar-text"
                     >Purchase History</span
                   ></a
@@ -216,7 +291,7 @@
               </li>
               <li>
                 <a href="support.html"
-                  ><img src="/assests/Group 1000002901 (1).png" alt="" /><span
+                  ><img src="/assests/Group 1000002901.svg" alt="" /><span
                     class="sidebar-text"
                     >Support & Help Center</span
                   ></a
@@ -224,19 +299,18 @@
               </li>
               <li>
                 <a class="mt-auto" href="">
-                  <img src="/assests/Group (4).png" alt="" />
+                  <img src="/assests/Group.svg" alt="" />
                   <span class="sidebar-text">Logout</span>
                 </a>
               </li>
             </ul>
           </div>
-
           <!-- subscription or main -->
-          <div class="subscription-wrapper px-md-3">
+          <div class="subscription-wrapper px-md-3 mx-2">
             <div class="feed-subscription w-100 section-feed">
               <!-- your-subscription or main start -->
 
-              <div class="feed-main1 mx-auto mt-5">
+              <div class="feed-main1 mx-auto mt-3 mt-md-5">
                 <h1 class="mb-0">Your Subscriptions</h1>
                 <p class="font-inter font-8">
                   Stay Updated with Your Favorite Creators or Find New Ones!
@@ -258,7 +332,7 @@
                         <div class="creator-img">
                           <img
                             src="/assests/Ellipse 57.png"
-                            class="position-absolute center-creator-img"
+                            class="position-absolute center-creator-img "
                             alt=""
                           />
                         </div>
@@ -1297,12 +1371,7 @@
           </div>
 
           <!-- chat -->
-          <div class="chat-side-icon py-2" id="chatIcon">
-            <img
-              src="/assests/chat-dots.svg"
-              alt=""
-            />
-          </div>
+       
           <div class="feed-chat px-4" id="chatBox">
             <div
               class="d-flex align-items-center justify-content-between chat-heading"
